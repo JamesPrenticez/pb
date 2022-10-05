@@ -1,0 +1,8 @@
+azure-functions
+
+Flask
+flask_sqlalchemy
+flask-migrate
+flask_login
+python-dotenv
+prettyprint
