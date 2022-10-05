@@ -29,11 +29,11 @@ def create_app(config_env):
 	with app.app_context():
 		from .home.routes import blueprint as home_blueprint
 		from .errors.routes import blueprint as errors_blueprint
-		from .customers.routes import blueprint as customers_blueprint
+		from .thread.routes import blueprint as thread_blueprint
 
 		app.register_blueprint(errors_blueprint)
 		app.register_blueprint(home_blueprint)
-		app.register_blueprint(customers_blueprint)
+		app.register_blueprint(thread_blueprint)
 
 		return app
 

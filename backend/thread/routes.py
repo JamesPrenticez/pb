@@ -2,7 +2,7 @@ from flask import Blueprint, render_template
 
 blueprint = Blueprint('customers_blueprint', __name__)
 
-@blueprint.route('/customers', methods=['GET'])
+@blueprint.route('/thread', methods=['GET'])
 def customers():
-  title = "Customers"
+  title = "Thread"
   return render_template('index.html', title=title)
